@@ -1,0 +1,4 @@
+# Django Sercret Key
+.env
+
+.idea/*
