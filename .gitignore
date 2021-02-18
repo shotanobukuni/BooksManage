@@ -1,4 +1,8 @@
 # Django Sercret Key
 .env
 
+# pycharm config
 .idea/*
+
+# local script
+backend/usercommand.py
