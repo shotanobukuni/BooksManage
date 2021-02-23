@@ -9,3 +9,4 @@ class BookVIewSet(viewsets.ModelViewSet):
     queryset = BookModels.objects.all()
 
 
+
