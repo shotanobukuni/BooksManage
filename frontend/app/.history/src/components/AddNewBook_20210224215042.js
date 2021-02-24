@@ -5,6 +5,7 @@ const AddNewBook = () => {
     const [bookList, setBookList] = useContext(BookCreater);
     return (
         <div>
+            {bookList.title}
             <input type='text' name='title' placeholder='タイトルを入力' required />
             <input type='text' name='turns' placeholder='巻数を入力' required />
             <br/>

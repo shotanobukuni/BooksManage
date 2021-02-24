@@ -1,7 +1,6 @@
 import React, {useState, useEffect, createContext} from 'react'
 import axios from 'axios'
 import AddNewBook from './AddNewBook'
-import BookCreater from './BookCreater'
 
 function BooskManageView() {
 
@@ -27,9 +26,9 @@ function BooskManageView() {
                     </tr>)
                 }
             </table>
-            <BookCreater.Provider value={[bookList, setBookList]}>
+            <bookCreater.Provider value={[bookList, setBookList]}>
             <AddNewBook />
-            </BookCreater.Provider>
+            </bookCreater.Provider>
         </div>
     )
 }

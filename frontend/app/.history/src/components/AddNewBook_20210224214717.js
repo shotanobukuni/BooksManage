@@ -2,7 +2,7 @@ import React, {useContext} from 'react'
 import BookCreater from './BookCreater'
 
 const AddNewBook = () => {
-    const [bookList, setBookList] = useContext(BookCreater);
+    const value = useContext(BookCreater);
     return (
         <div>
             <input type='text' name='title' placeholder='タイトルを入力' required />

@@ -1,15 +1,13 @@
-import React, {useState, useEffect, createContext} from 'react'
+import React, {useState, useEffect} from 'react'
 import axios from 'axios'
-import AddNewBook from './AddNewBook'
-import BookCreater from './BookCreater'
 
 function BooskManageView() {
-
-    // Get All Books Data
+    // Get Books Data
     const [bookList, setBookList] = useState([])
     useEffect(() => {
         axios.get(`http://127.0.0.1:8000/api/books/`)
         .then(res => {setBookList(res.data)})
+        console.log(bookList);
     }, [])
     return (
         <div>
@@ -27,9 +25,6 @@ function BooskManageView() {
                     </tr>)
                 }
             </table>
-            <BookCreater.Provider value={[bookList, setBookList]}>
-            <AddNewBook />
-            </BookCreater.Provider>
         </div>
     )
 }

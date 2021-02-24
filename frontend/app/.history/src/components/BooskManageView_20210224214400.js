@@ -27,9 +27,9 @@ function BooskManageView() {
                     </tr>)
                 }
             </table>
-            <BookCreater.Provider value={[bookList, setBookList]}>
+            <bookCreater.Provider value={[bookList, setBookList]}>
             <AddNewBook />
-            </BookCreater.Provider>
+            </bookCreater.Provider>
         </div>
     )
 }

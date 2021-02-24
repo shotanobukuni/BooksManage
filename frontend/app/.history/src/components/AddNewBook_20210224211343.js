@@ -1,8 +1,8 @@
 import React, {useContext} from 'react'
-import BookCreater from './BookCreater'
+// import {BookCreater} from './BooskManageView'
 
-const AddNewBook = () => {
-    const [bookList, setBookList] = useContext(BookCreater);
+const AddNewBook = (props) => {
+    // const [bookList, setBookList] = useContext(BookCreater)
     return (
         <div>
             <input type='text' name='title' placeholder='タイトルを入力' required />
